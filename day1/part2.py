@@ -2,6 +2,7 @@ import sys
 
 windowSize = 3
 
+# Open a given input file and return the values as an array
 def getInput(filePath):
     file = open(filePath, 'r')
     content = file.readlines()
@@ -13,6 +14,8 @@ def getInput(filePath):
 
     return result
 
+# Given an list of values return a count of the values that 
+# increased over the previous value
 def depthIncreasing(values):
   count = 0
   for i in range(len(values) - 1):
@@ -21,6 +24,8 @@ def depthIncreasing(values):
 
   return count
 
+# Given a list of lists(windows), calculate the sum of each
+# window and append it to a list of sums
 def sumWindows(windows):
   windowSums = []
   for i in range(len(windows)):
@@ -28,6 +33,8 @@ def sumWindows(windows):
 
   return windowSums
 
+# Given a list of values and a window size, return a list of sliding
+# windows of the given size
 def getWindows(values, windowSize):
   print('here')
   windows = []

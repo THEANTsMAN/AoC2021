@@ -1,5 +1,6 @@
 import sys
 
+# Open a given input file and return the values as an array
 def getInput(filePath):
     file = open(filePath, 'r')
     content = file.readlines()
@@ -11,6 +12,8 @@ def getInput(filePath):
 
     return result
 
+# Given an list of values return a count of the values that 
+# increased over the previous value
 def depthIncreasing(values):
   count = 0
   for i in range(len(values) - 1):
